@@ -1,359 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Cheetah</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<style>
-body {
-    font: 400 15px Lato, sans-serif;
-    line-height: 1.8;
-    color: #818181;
-}
-h2 {
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #303030;
-    font-weight: 600;
-    margin-bottom: 30px;
-}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    color: #303030;
-    font-weight: 400;
-    margin-bottom: 30px;
-}v
-.jumbotron {
-    font-family: Montserrat, sans-serif;
-}
+    <title>Lonely - Free bootstrap 3 one page template</title>
 
-.navbar {
-    font-family: Montserrat, sans-serif;
-}
-.jumbotron { 
-    background-color: #f4511e; /* Orange */
-    color: #ffffff;
-}
-.container-fluid {
-    padding: 60px 100px;
-}
-.bg-grey {
-    background-color: #f6f6f6;
-}
-.logo {
-      color: #f4511e;
-    font-size: 200px;
-
-}
-.thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-}
-
-.thumbnail img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-}
-.carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #f4511e;
-}
-
-.carousel-indicators li {
-    border-color: #f4511e;
-}
-
-.carousel-indicators li.active {
-    background-color: #f4511e;
-}
-
-.item h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    font-weight: 400;
-    font-style: italic;
-    margin: 70px 0;
-}
-
-.item span {
-    font-style: normal;
-}
-.navbar {
-    margin-bottom: 0;
-    background-color: #f4511e;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-}
-
-.navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-}
-
-.navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
-    background-color: #fff !important;
-}
-
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-}
- 
-footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #f4511e;
-}
-.slideanim {visibility:hidden;}
-.slide {
-    /* The name of the animation */
-    animation-name: slide;
-    -webkit-animation-name: slide; 
-    /* The duration of the animation */
-    animation-duration: 1s; 
-    -webkit-animation-duration: 1s;
-    /* Make the element visible */
-    visibility: visible; 
-}
-
-/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
-@keyframes slide {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(70%);
-    } 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    } 
-}
-@-webkit-keyframes slide {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(70%);
-    } 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    }
-}v
-</style> 
-
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/nivo-lightbox.css" rel="stylesheet" />
+	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/owl.carousel.css" rel="stylesheet" media="screen" />
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen" />	
+	<link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+	<link href="color/default.css" rel="stylesheet">
 
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<div class="jumbotron text-center container-fluid">
-  <h1>獵豹</h1> 
-  <p><i>世界上跑得最快的動物</i></p> 
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+	<!-- Preloader -->
+	<div id="preloader">
+	  <div id="load"></div>
+	</div>
 
-  <form class="form-inline">
-    <input type="email" class="form-control" size="30" placeholder="Email Address">
-    <button type="button" class="btn btn-danger">Subscribe</button>
-  </form>
-</div>
+	<!-- Section: intro -->
+    <section id="intro" class="intro">
+	
+		<div class="slogan">
+			<a href="index.html"><img src="img/logo.png" alt="" /></a>
+		</div>
+		<div class="page-scroll">
+			<a href="#about">
+				<i class="fa fa-angle-down fa-5x animated"></i>
+			</a>
+		</div>
+    </section>
+	<!-- /Section: intro -->
+	
+    <!-- Navigation -->
+    <div id="navigation">
+        <nav class="navbar navbar-custom" role="navigation">
+                              <div class="container">
+                                    <div class="row">
+                                          <div class="col-md-12">
+                         
+                                          <!-- Brand and toggle get grouped for better mobile display -->
+                                          <div class="navbar-header">
+                                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                                                <i class="fa fa-bars"></i>
+                                                </button>
+                                          </div>
+                                                      <!-- Collect the nav links, forms, and other content for toggling -->
+                                                      <div class="collapse navbar-collapse" id="menu">
+                                                            <ul class="nav navbar-nav">
+                                                                  <li class="active"><a href="#intro">Home</a></li>
+                                                                  <li><a href="#about">About Me</a></li>
+														          <li><a href="#gallery">My gallery</a></li>                                                                                                             
+                                                                  <li><a href="#contact">Talk to me</a></li>
+                                                            </ul>
+                                                      </div>
+                                                      <!-- /.Navbar-collapse -->
+                             
+                                          </div>
+                                    </div>
+                              </div>
+                              <!-- /.container -->
+                        </nav>
+    </div> 
+    <!-- /Navigation -->  
 
-<div id="about" class="container-fluid">
-	<div class="row">
-		<div class="col-sm-9">
-  			<h2>About Cheetah</h2>
-  			<h4>又稱印度豹，是貓科動物的一種，也是獵豹屬下唯一的存活物種，現在主要分布在非洲與西亞。同其它貓科動物不同，獵豹依靠速度來捕獵，而非偷襲或群體攻擊。獵豹是陸上奔跑最快的動物，全速奔馳的獵豹，時速可以達113km。</h4> 
-  			<p>獵豹全速奔跑時速可以超過120公里，相當於百米世界冠軍的三倍快，據動物星球節目資料指出觀察過的野生獵豹100公尺直線，最快曾達5.13秒，這種速度是世界百米紀錄保持人烏塞恩·博爾特9.58秒的1.86倍快，美國辛辛那提動物園，人工飼養獵豹莎拉在2012年試驗中創下一百公尺5.95秒佳績，成為人工飼養獵豹最快紀錄保持者。
-        獵豹不僅是陸地上速度最快的動物，也是貓科動物成員中歷史最久，最獨特和特異化的品種。與其它貓科動物不同，獵豹體型纖瘦，腿細而長，被稱為貓科中的灰狗。獵豹侵略性不強，生存依賴速度，而非打鬥。牠的爪較小、牙齒短，這是爲了提高速度所付出的代價。同時，獵豹無法通過與體型較大的獵食動物爭鬪來保護自己獵得的食物，或小獵豹。</p>
-  			<a href="https://zh.wikipedia.org/wiki/%E7%8C%8E%E8%B1%B9"><button class="btn btn-default btn-lg">Learn More</button></a>
-  		</div>
-  		<div class="col-sm-3">
-  			<span class="glyphicon glyphicon-globe logo"></span>
-  		</div>
-  	</div>
-</div>
+	<!-- Section: about -->
+    <section id="about" class="home-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					
+						<div class="section-heading text-center">
+						<div class="wow bounceInDown" data-wow-delay="0.2s">
+							<h2>My name is Alice</h2>
+						</div>
+						<p class="wow bounceInUp" data-wow-delay="0.3s">I'm 28 years old from a village near Alpen mountain and I'm a spinster :(</p>
+						</div>
+					
+				</div>
+			</div>
+		</div>
 
-<div id="services"  class="container-fluid bg-grey">
-  	<div class="col-sm-3">
-  		<span class="glyphicon glyphicon-grain logo"></span>
-  	</div>
-  	<div class="col-sm-9">
-  	  <h4><strong>分類</strong>獵豹在貓科中，屬於貓亞科，有單獨的屬、種。不像歸類上花豹和美洲豹等之間有密切關係，它們與獵豹僅同為貓科。而花豹、虎、獅、美洲豹等均歸類為豹亞科，豹屬。</h4> 
-  	  <p>有關獵豹的學名，「屬」的Acinonyx源自希臘語，作「不能動的爪」解，獵豹不能縮入腳爪，也是貓科動物唯一無法伸縮爪子的物種，可增加獵捕時的攻擊力，腳底粗糙的肉墊，可增加在奔跑時的抓地力，較普通貓科較長的尾巴可以保持於奔跑時的平衡。「種」的 jubatus則衍生自拉丁語的iuba，即「馬的鬃毛」，指小獵豹的長毛。</p>
-  	  <p><strong>捕食</strong> 獵豹為食肉動物，以各種羚羊為主要食物，如瞪羚、黑斑羚、有時也捕食幼牛羚、疣豬以及野兔等。偷偷接近到與獵物10至30米的距離，然後獵捕獵物，獵捕時速度最高可達到時速120千米，且僅一腳著地，但最多只能跑3分鐘，超過時生理構造使獵豹必須減速，否則它們會因身體過熱而死。通常在1分鐘內即可獵捕到獵物，如果獵豹獵捕失敗，那將是浪費體力。大致上6次捕獵中僅有1次會成功。獵豹剛捕捉到獵物後，能用嘴持續咬住獵物頸部直到斷氣而期間鼻部大量進行呼吸，但全力奔跑後的獵豹體能狀況孱弱，需要數十分鐘復原，因此更無法迎敵非洲豺犬，只能放棄到手獵物；但曾有極端的案例是一頭獵豹捕獵後還賭命將一頭非洲豺犬驅走。</p>
-  	  <p><strong>棲息地</strong>在遠古時期獵豹的棲息地已延伸到非洲與亞洲、中國、印度，在冰河時期時更到達了歐洲與北美洲，今日則大多在非洲撒哈拉大沙漠以南，少部份的獵豹在亞洲，但也已在絕種邊緣。獵豹的演化史可以追溯到約四百萬年前，已發現最古老的化石在現今美國德州、內華達、和懷俄明州境內。它曾經遍布亞洲、非洲、北美洲、和歐洲，直到約10,000年前的上個冰河期。劇烈的氣候變化導致大量的哺乳動物滅絕，北美、歐洲以及大部分亞洲和非洲的獵豹就此消失。牠們喜歡較高的地方，如行至小山丘頂或樹上可以觀看獵物。牠們不適合生活於樹木或灌木叢較多的地方，否則他們無法使用獨特的奔馳獵捕。獵豹常被認爲是生活在開闊環境和草地的動物，這種印象可能來自在草短的環境中很容易發現獵豹。然而獵豹的棲息地差異很大，特別是植物生長茂盛的地區，甚至崎嶇的山地。獵豹是日行性的動物，它們依賴視力來捕獵維生，所以牠們在白天活動多於夜晚。在溫暖的地區，牠們大多在氣溫比較涼爽的清晨和黃昏活動。</p>
-  	</div>
-</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+				
+					<img src="img/img1.jpg" class="img-responsive img-rounded" alt="" />
+				</div>		
+				<div class="col-md-6">
+					<p><strong>You'll fall in love with me at the first sight</strong></p>
+					<p>
+					Lorem ipsum dolor sit amet, ei purto tamquam ceteros his, eos in graece posidonium. 
+					Ex nullam vidisse salutatus sed, ea persius phaedrum tincidunt vel. Option virtute nonumes ne est. 
+					Id homero expetendis eam, dictas rationibus ut has.
+					</p>
+					<blockquote>
+					Pri pertinacia elaboraret te, an eirmod delicatissimi nec. Eu liber quodsi maiorum mei. 
+					Civibus perfecto rationibus id his, est noster nostrud aliquando at.
+					</blockquote>
+					<a href="#gallery" class="btn btn-skin btn-lg btn-scroll">See my photos</a>
+				</div>
+			</div>		
+		</div>
+	</section>
+	<!-- /Section: about -->
+	
+	<!-- Section: separator -->
+    <section id="separator" class="home-section parallax text-center" data-stellar-background-ratio="0.5">
+		
+		<div class="container">
+			<div class="row">
+					<div class="col-xs-6 col-sm-3 col-md-3">
+						<div class="align-center txt-shadow">
+							<div class="icon">
+								<i class="fa fa-graduation-cap fa-5x"></i>
+							</div>
+						<span class="color-white">Bachelor of Design</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-3">
+						<div class="align-center txt-shadow">
+							<div class="icon">
+								<i class="fa fa-heart fa-5x"></i>
+							</div>
+						<span class="color-white">10x failed in love</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-3">
+						<div class="align-center txt-shadow">
+							<div class="icon">
+								<i class="fa fa-plane fa-5x"></i>
+							</div>
+						<span class="color-white">I love traveling</span>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-3">
+						<div class="align-center txt-shadow">
+							<div class="icon">
+								<i class="fa fa-camera fa-5x"></i>
+							</div>
+						<span class="color-white">I'm photographer</span>
+						</div>
+					</div>
+			</div>		
+		</div>
+	</section>
+	<!-- /Section: separator -->
+	
+	
+	<!-- Section: gallery -->
+    <section id="gallery" class="home-section text-center bg-gray">
 
-<div class="container-fluid text-center">
-  <h2>Species</h2>
-  <h4>Subspecies of the cheetah</h4>
-  <br>
-  <div class="row">
-    <div class="col-lg-3">
-      <h4>Asian cheetah </h4>
-      <img src="Asian_cheetah.jpg" class="img-responsive" >
-      <p>亞洲獵豹</p>
-      <p>只發現於伊朗的沙漠，因而是亞洲里唯一的倖存獵豹亞種。此亞種是最極危的獵豹亞種，也是世界上最極危的動物。截止2013年，總共在野外發現了大約40-70個個體，多數發現與伊朗的國家公園。亞洲獵豹是最小的獵豹，有著比非洲獵豹纖細是的身、頸背上有較多的毛髮、較長而有力的頸部，以及有著較細的淚溝和較小的頭。 此亞種是唯一有著冬天毛髮的獵豹。</p>
-    </div>
-    <div class="col-lg-3">
-      <h4>South African cheetah </h4>
-      <img src="Cheetah201.jpg" class="img-responsive" >
-      <p>南非獵豹</p>
-      <p>生存於南非，納米比亞，辛巴威和波札那，同時也是最常見的獵豹亞種。在2007年的統計，在波札那有1800個個體，在南非有550-850個個體，在辛巴威有400個個體,在尚比亞有100個個體，在莫三比克有50-90個個體以及在馬拉威有25-50個個體。在今日的納米比亞，獵豹的數量從2,500頭提升到3.500頭。南非獵豹通常生活在草原、熱帶草原、乾旱的環境以及開闊的田野和山區.。</p>
-    </div>
-    <div class="col-lg-3">
-      <h4>Sudan cheetah </h4>
-      <img src="Cheetah_at_Whipsnade_Zoo,_Dunstable.jpg" class="img-responsive"  >
-      <p>蘇丹獵豹</p>
-      <p>及非洲之角，此亞種在2011年證明其遺傳分析表明顯著差異前，此亞種一直被歸類為南非獵豹[5][6] 蘇丹獵豹是第二大的獵豹亞種，於2002年的種群統計，大約有2000個個體在野外。</p>
-    </div>
-    <div class="col-lg-3">
-      <h4>Tanzanian cheetah </h4>
-      <img src="TanzanianCheetah.jpg" class="img-responsive" >
-      <p>坦尚尼亞獵豹</p>
-      <p>發現於肯亞，索馬利亞，坦尚尼亞和烏干達。2007年的種群分布統計為大約2,572頭成年和亞成年個體。坦尚尼亞獵豹是僅次於南非獵豹第二常見的獵豹亞種。坦尚尼亞獵豹也是最大的獵豹亞種。</p>
-    </div>
-    </div>
-</div>
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow bounceInDown" data-wow-delay="0.4s">
+					<div class="section-heading">
+						<h2>My photo gallery</h2>
+						<p>Take a look at my personal moment, enjoy</p>
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
 
+		<div class="container">
+			<div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12" >
+					<div class="wow bounceInUp" data-wow-delay="0.4s">
+                    <div id="owl-works" class="owl-carousel">
+                        <div class="item"><a href="img/gallery/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/1.jpg" class="img-responsive" alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/2.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/2.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/3.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/3.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/4.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/4.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/5.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/5.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/6.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/6.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/7.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/7.jpg" class="img-responsive " alt="img"></a></div>
+                        <div class="item"><a href="img/gallery/8.jpg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/gallery/8.jpg" class="img-responsive " alt="img"></a></div>
+                    </div>
+					</div>
+                </div>
+            </div>
+		</div>
+	</section>
+	<!-- /Section: services -->
+	
 
-<div id="portfolio"  class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2>
-  <h4>Take a look at Charming Cheetah....</h4>
-  <div class="row text-center">
+	
+
+	<!-- Section: contact -->
+    <section id="contact" class="home-section text-center">
+		<div class="heading-contact">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-offset-2">
+					
+					<div class="section-heading">
+					<div class="wow bounceInDown" data-wow-delay="0.4s">
+					<h2>Email or phone are welcome</h2>
+					</div>
+					<p class="wow lightSpeedIn" data-wow-delay="0.3s">Gentleman, introduce your self and get in touch with me privately</p>
+					</div>
+					
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+
+    <div class="row">
+        <div class="col-lg-8 col-md-offset-2">
+            <div class="form-wrapper marginbot-50">
+                <form id="contact-form">
+                <div class="row">
     
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="Two_cheetahs_together.jpg" alt="Two cheetahs">
-        <p><strong>Two cheetahs</strong></p>
-      </div>
-    </div>
+                        <div class="form-group">
+                            <label for="name">
+                                Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                Subject</label>
+                            <select id="subject" name="subject" class="form-control" required="required">
+                                <option value="na" selected="">Choose One:</option>
+                                <option value="service">Friendship request</option>
+                                <option value="suggestions">Wanna marry you</option>
+                                <option value="product">Prom night invitation</option>
+                            </select>
+                        </div>
+          
+             
+                        <div class="form-group">
+                            <label for="name">
+                                Message</label>
+                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                placeholder="Message"></textarea>
+                        </div>
+       
+           
+                        <button type="submit" class="btn btn-skin btn-block" id="btnContactUs">
+                            Send Message</button>
+       
+                </div>
+                </form>
+				
+            </div>
+			<div class="text-center">
+					<p class="lead"><i class="fa fa-phone"></i> Call me +1 888 9796 88</p>
+			</div>
+        </div>
 
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="Cheetah_with_impala.jpg" alt="Cheetah with impala">
-        <p><strong>Cheetah with impala</strong></p>
-      </div>
-    </div>
-    
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="Acinonyx_jubatus_Sabi_Sand.jpg" alt="A group of cheetahs">
-        <p><strong>A group of cheetahs</strong></p>
-      </div>
-    </div>
-  </div>
-<h2>What others said...</h2>
-<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
+    </div>	
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-    <h4>"它是荒野中的尊贵象征...”<br><span style="font-style:normal;">Chris Johns , Photographer</span></h4>
-    </div>
-    <div class="item">
-      <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
-    </div>
-    <div class="item">
-      <h4>"人生又如同獵豹捕食,牠蓄積力量,向獵物狂奔而去,可離獵物越来越近,牠發現自己的力量也消失殆盡了,最终放棄了奔跑追逐."<br><span style="font-style:normal;">Words about life</span></h4>
-    </div>
-  </div>
+		</div>
+	</section>
+	<!-- /Section: contact -->
 
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<p>&copy;Copyright 2014 . Alice Lonely . design by <a href="http://bootstraptaste.co">Bootstrap Themes</a></p>
+				</div>
+                <!-- 
+                    All links in the footer should remain intact. 
+                    Licenseing information is available at: http://bootstraptaste.com/license/
+                    You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Lonely
+                -->
+			</div>	
+		</div>
+	</footer>
 
-</div>
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>	
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/nivo-lightbox.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
-      <a class="navbar-brand" href="#">Cheetah</a>
-    </div>
-   
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#pricing">PRICING</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  
-  </div>
-</nav>
-
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p>Bootstrap Theme Made By <a href="http://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p> 
-</footer>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-   // Make sure this.hash has a value before overriding default behavior
-  if (this.hash !== "") {
-
-    // Prevent default anchor click behavior
-    event.preventDefault();
-
-    // Store hash
-    var hash = this.hash;
-
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 900, function(){
-
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-      });
-    } // End if
-  });
-})
-
-$(window).scroll(function() {
-  $(".slideanim").each(function(){
-    var pos = $(this).offset().top;
-
-    var winTop = $(window).scrollTop();
-    if (pos < winTop + 600) {
-      $(this).addClass("slide");
-    }
-  });
-});
-
-
-</script>
 </body>
+
 </html>
